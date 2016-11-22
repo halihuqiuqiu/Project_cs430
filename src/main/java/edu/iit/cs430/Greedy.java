@@ -10,7 +10,7 @@ import java.util.Map;
 public class Greedy {
     public List<String> execute(List<Point> pointList){
         List<String> lines = new ArrayList<>();
-        
+
         lines.add(String.valueOf(pointList.size()));     // add total number in the first line
         lines.add("v 12");
         lines.add("h 51");
