@@ -47,7 +47,7 @@ public class FileIO {
     }
 
     public static void write (String fileName, int fileNumber, List<String> lines){
-        Path path = Paths.get("./output_greedy/" +fileName+fileNumber+".txt");
+        Path path = Paths.get("./output_local/" +fileName+fileNumber+".txt");
         try {
             Files.createFile(path);
             Files.write(path, lines, Charset.forName("UTF-8"));

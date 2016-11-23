@@ -27,9 +27,9 @@ public class Main
         for (int i=1; i<=fileNum;i++){
             List<String> lines = greedy.execute(fileMap.get(i-1));  //result each line
             if(i<10){
-                FileIO.write("greedy_solution0",i,lines);
+                FileIO.write("local_solution0",i,lines);
             }else {
-                FileIO.write("greedy_solution",i,lines);
+                FileIO.write("local_solution",i,lines);
             }
         }
 
