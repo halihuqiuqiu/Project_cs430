@@ -14,7 +14,6 @@ public class Main
     public static void main( String[] args )
     {
 
-        System.out.println( "Output is in folder" );
         Map<Integer, List<Point>> fileMap = FileIO.read();
 
         System.out.println(fileMap.get(0).get(0).getX()+ " " + fileMap.get(0).get(0).getY());
@@ -32,6 +31,9 @@ public class Main
                 FileIO.write("local_solution",i,lines);
             }
         }
+
+        System.out.println( "Output is in folder" );
+
 
 
     }
