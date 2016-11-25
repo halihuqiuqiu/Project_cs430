@@ -11,10 +11,10 @@ import static org.junit.Assert.*;
 /**
  * Created by YongYang on 11/24/16.
  */
-public class GreedyTest {
+public class LocalTest {
 
 
-    private Greedy greedy = new Greedy();
+    private Local local = new Local();
     private List<Point> pointList = new ArrayList<Point>();
     private List<Point> pointList1 = new ArrayList<Point>();
 
@@ -57,21 +57,21 @@ public class GreedyTest {
     public void cheackCorrect() throws Exception {
 
 
-        assertEquals(true,greedy.cheackCorrect(v,h,pointList));
+        assertEquals(true, local.cheackCorrect(v,h,pointList));
 
     }
     @Test
     public void cheackCorrect1() throws Exception {
 
 
-        assertEquals(true,greedy.cheackCorrect(v,h,pointList1));
+        assertEquals(true, local.cheackCorrect(v,h,pointList1));
 
     }
     @Test
     public void cheackCorrect3() throws Exception {
 
 
-        assertEquals(false,greedy.cheackCorrect(v1,h1,pointList));
+        assertEquals(false, local.cheackCorrect(v1,h1,pointList));
 
     }
 
@@ -79,7 +79,7 @@ public class GreedyTest {
 /*
     @Test
     public void execute() throws Exception {
-        assertEquals(null,greedy.execute(pointList));
+        assertEquals(null,local.execute(pointList));
 
     }
 

@@ -22,6 +22,9 @@ public class FileIO {
         File[] files = new File("./input").listFiles();
         Integer fileNumber = 0;
         for (File file : files){
+            if(!file.getName().endsWith(".txt")){
+                continue; // only read txt file
+            }
             List<Point> inputPoints = new ArrayList<Point>();
             try {
                 Scanner scanner = new Scanner(file);
