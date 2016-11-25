@@ -24,7 +24,9 @@ public class Greedy {
         }
 
         //make yPositon sorted
-        Arrays.sort(yPosition);
+        Arrays.sort(yPosition);            // all y position are sorted
+
+
 
         boolean change=true;
 
@@ -32,14 +34,15 @@ public class Greedy {
         while(change==true){        //if no change already, while loop will stop
             change=false;
 
-            for (int i = 0; i < v.length; i++) {             // choose first line in v
+            for (int i = 0; i < v.length-1; i++) {             // choose first line in v
                 if (v[i] != 0.1) {
-                    for (int j = i; j < v.length; j++) {      // choose second line also in v after first line
+                    for (int j = i+1; j < v.length; j++) {      // choose second line also in v after first line
                         if (v[j] != 0.1) {
-                            v[i] = 0.1;
-                            v[j] = 0.1;
+
                             for (int w = 0; w < v.length; w++) {   //choose the third line in v
                                 if (v[w] == 0.1) {
+                                    v[i] = 0.1;
+                                    v[j] = 0.1;
                                     v[w] = pointList.get(w).getX() + 0.5;
                                     if(cheackCorrect(v,h,pointList)==false){
                                         v[i]=pointList.get(i).getX()+0.5;   //change fail, put lines back
@@ -52,8 +55,13 @@ public class Greedy {
 
                                 }
                             }
+
+
+
                             for (int w=0; w<h.length;w++){
                                 if (h[w]==0.1){
+                                    v[i] = 0.1;
+                                    v[j] = 0.1;
                                     h[w]=yPosition[w]+0.5;
                                     if (cheackCorrect(v,h,pointList)==false){
                                         v[i]=pointList.get(i).getX()+0.5;
@@ -66,15 +74,25 @@ public class Greedy {
                                 }
 
                             }
+
+
                         }
                     }
 
+
+                }
+
+
+            }
+
+            for (int i = 0; i < v.length; i++) {             // choose first line in v
+                if (v[i] != 0.1) {
                     for (int j = 0; j < h.length; j++) {        // choose second line in h
                         if (h[j] != 0.1) {
-                            v[i] = 0.1;
-                            h[j] = 0.1;
                             for (int w = 0; w < v.length; w++) {   //choose the third line in v
                                 if (v[w] == 0.1) {
+                                    v[i] = 0.1;
+                                    h[j] = 0.1;
                                     v[w] = pointList.get(w).getX() + 0.5;
                                     if(cheackCorrect(v,h,pointList)==false){
                                         v[i]=pointList.get(i).getX()+0.5;   //change fail, put lines back
@@ -89,6 +107,8 @@ public class Greedy {
                             }
                             for (int w=0; w<h.length;w++){
                                 if (h[w]==0.1){
+                                    v[i] = 0.1;
+                                    h[j] = 0.1;
                                     h[w]=yPosition[w]+0.5;
                                     if (cheackCorrect(v,h,pointList)==false){
                                         v[i]=pointList.get(i).getX()+0.5;
@@ -106,18 +126,18 @@ public class Greedy {
 
                 }
 
+                }
 
-            }
 
 
-            for (int i =0; i<h.length;i++){
+                for (int i =0; i<h.length-1;i++){
                 if (h[i]!=0.1){
-                    for (int j=i; j<h.length;j++){         //choose two line both in h
+                    for (int j=i+1; j<h.length;j++){         //choose two line both in h
                         if (h[j] != 0.1) {
-                            h[i] = 0.1;
-                            h[j] = 0.1;
                             for (int w = 0; w < v.length; w++) {   //choose the third line in v
                                 if (v[w] == 0.1) {
+                                    h[i] = 0.1;
+                                    h[j] = 0.1;
                                     v[w] = pointList.get(w).getX() + 0.5;
                                     if(cheackCorrect(v,h,pointList)==false){
                                         h[i]=yPosition[i]+0.5;   //change fail, put lines back
@@ -132,6 +152,8 @@ public class Greedy {
                             }
                             for (int w=0; w<h.length;w++){
                                 if (h[w]==0.1){
+                                    h[i] = 0.1;
+                                    h[j] = 0.1;
                                     h[w]=yPosition[w]+0.5;
                                     if (cheackCorrect(v,h,pointList)==false){
                                         h[i]=yPosition[i]+0.5;
@@ -146,18 +168,19 @@ public class Greedy {
                             }
                         }
                     }
+
+
                 }
             }
+
+
         }
-
-
 
 
 
 
         //return result
         List<String> lines = new ArrayList<>();
-        lines.add("");                 //keep first line for total number
         for(double i:v){
             if (i!=0.1){
                 lines.add("v " + String.valueOf(i));
@@ -169,10 +192,12 @@ public class Greedy {
                 lines.add("h " + String.valueOf(j));
             }
         }
-        lines.add(0,String.valueOf(lines.size()-1));     // add total number in the first line
+        lines.add(0,String.valueOf(lines.size()));     // add total number in the first line
 
 
         return lines;
+
+
     }
 
 

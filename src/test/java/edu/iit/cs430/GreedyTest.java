@@ -1,6 +1,7 @@
 package edu.iit.cs430;
 
 import org.junit.Before;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,8 @@ import static org.junit.Assert.*;
  * Created by YongYang on 11/24/16.
  */
 public class GreedyTest {
+
+
     private Greedy greedy = new Greedy();
     private List<Point> pointList = new ArrayList<Point>();
     private List<Point> pointList1 = new ArrayList<Point>();
@@ -25,12 +28,18 @@ public class GreedyTest {
     private double[] v = new double[2];        //all possible position for line
     private double[] h = new double[1];
 
+    private double[] v1 = new double[1];        //all possible position for line
+    private double[] h1 = new double[1];
+
 
     @Before
     public void setup(){
         v[0]=1.5;
         v[1]=3.5;
         h[0]=3.5;
+
+        v1[0]=0.5;
+        h1[0]=0.5;
 
         pointList1.add(p1);
 
@@ -44,19 +53,35 @@ public class GreedyTest {
 
 
 
-    @org.junit.Test
+    @Test
     public void cheackCorrect() throws Exception {
 
 
         assertEquals(true,greedy.cheackCorrect(v,h,pointList));
 
     }
-    @org.junit.Test
+    @Test
     public void cheackCorrect1() throws Exception {
 
 
         assertEquals(true,greedy.cheackCorrect(v,h,pointList1));
 
     }
+    @Test
+    public void cheackCorrect3() throws Exception {
 
+
+        assertEquals(false,greedy.cheackCorrect(v1,h1,pointList));
+
+    }
+
+
+/*
+    @Test
+    public void execute() throws Exception {
+        assertEquals(null,greedy.execute(pointList));
+
+    }
+
+*/
 }

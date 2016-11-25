@@ -16,9 +16,8 @@ public class Main
 
         Map<Integer, List<Point>> fileMap = FileIO.read();
 
-        System.out.println(fileMap.get(0).get(0).getX()+ " " + fileMap.get(0).get(0).getY());
-        System.out.println(fileMap.size());
-        System.out.println(fileMap.get(0).size());
+        System.out.println("Input: total "+fileMap.size() +" files.");
+
 
         Greedy greedy = new Greedy();
         int fileNum = fileMap.size();
@@ -32,7 +31,7 @@ public class Main
             }
         }
 
-        System.out.println( "Output is in folder" );
+        System.out.println( "Output: in output_local folder" );
 
 
 
