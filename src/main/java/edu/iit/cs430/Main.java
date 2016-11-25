@@ -14,7 +14,7 @@ public class Main
 
         Map<Integer, List<Point>> fileMap = FileIO.read();
 
-        System.out.println("Input: total "+fileMap.size() +" files. Please wait...");
+        System.out.println("Input: total "+fileMap.size() +" files. Processing...");
 
 
         Local local = new Local();
@@ -30,6 +30,7 @@ public class Main
         }
 
         System.out.println( "Output: in output_local folder" );
+        System.out.println( "Finished" );
 
 
 

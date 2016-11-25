@@ -7,14 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="566bf73e-92f5-4fcd-99af-6e94192ba02c" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/edu/iit/cs430/Greedy.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/edu/iit/cs430/GreedyTest.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Greedy.java" afterPath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/edu/iit/cs430/GreedyTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/iit/cs430/LocalTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/iit/cs430/FileIO.class" afterPath="$PROJECT_DIR$/target/classes/edu/iit/cs430/FileIO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/iit/cs430/Local.class" afterPath="$PROJECT_DIR$/target/classes/edu/iit/cs430/Local.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/iit/cs430/Main.class" afterPath="$PROJECT_DIR$/target/classes/edu/iit/cs430/Main.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java" afterPath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java" afterPath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java" afterPath="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java" />
     </list>
     <ignored path="Project_cs445.iws" />
@@ -38,11 +34,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Local.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Local.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="187" column="12" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
+            <state relative-caret-position="238">
+              <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FileIO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="FileIO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="-87">
               <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
               <folding />
             </state>
@@ -63,8 +59,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+            <state relative-caret-position="391">
+              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -96,8 +92,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Greedy.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/iit/cs430/GreedyTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java" />
       </list>
     </option>
@@ -261,9 +257,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -823,7 +819,8 @@
       <workItem from="1479886417750" duration="499000" />
       <workItem from="1480024349050" duration="13649000" />
       <workItem from="1480047931196" duration="439000" />
-      <workItem from="1480048373842" duration="1533000" />
+      <workItem from="1480048373842" duration="2093000" />
+      <workItem from="1480098698058" duration="268000" />
     </task>
     <servers />
   </component>
@@ -861,7 +858,7 @@
   </component>
   <component name="TimeTrackingManager">
     <option name="enabled" value="true" />
-    <option name="totallyTimeSpent" value="33919000" />
+    <option name="totallyTimeSpent" value="34747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1433" height="807" extended-state="6" />
@@ -944,6 +941,32 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3162">
+          <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3621">
@@ -1109,29 +1132,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="391">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/Local.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="187" column="12" selection-start-line="187" selection-start-column="12" selection-end-line="187" selection-end-column="12" />
+        <state relative-caret-position="238">
+          <caret line="14" column="64" selection-start-line="14" selection-start-column="64" selection-end-line="14" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/iit/cs430/FileIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-87">
+          <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
+          <folding />
         </state>
       </provider>
     </entry>

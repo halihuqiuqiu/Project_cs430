@@ -11,6 +11,12 @@ public class Local {
     public List<String> execute(List<Point> pointList) {
 
 
+        List<String> lines = new ArrayList<>();
+        if(pointList.size()==0){            // input has 0 point
+            return lines;
+        }
+
+
         int pointNumber = pointList.size();
 
         int[] yPosition = new int[pointNumber];
@@ -185,7 +191,7 @@ public class Local {
 
             //only remove one line, it still work
 
-            
+
             for (int i =0;i<v.length;i++){
                 if (v[i]!=0.1){
                     v[i]=0.1;
@@ -222,7 +228,7 @@ public class Local {
 
 
         //return result
-        List<String> lines = new ArrayList<>();
+
         for (double i : v) {
             if (i != 0.1) {
                 lines.add("v " + String.valueOf(i));
