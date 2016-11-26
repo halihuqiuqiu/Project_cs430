@@ -12,7 +12,7 @@ public class Local {
 
 
         List<String> lines = new ArrayList<>();
-        if(pointList.size()==0){            // input has 0 point
+        if(pointList.size()==0){            // input has 0 point0
             return lines;
         }
 
