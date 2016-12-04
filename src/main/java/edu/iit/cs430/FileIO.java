@@ -15,16 +15,18 @@ import java.util.*;
  */
 public class FileIO {
 
-    public static Map<Integer, List<Point>> read(){
+    public static Map<String, List<Point>> read(){
 
-        Map<Integer, List<Point>> fileMap = new HashMap<Integer, List<Point>>(){};
+        Map<String, List<Point>> fileMap = new HashMap<String, List<Point>>(){};
 
         File[] files = new File("./input").listFiles();
-        Integer fileNumber = 0;
+
         for (File file : files){
-            if(!file.getName().endsWith(".txt")){
-                continue; // only read txt file
+
+            if(!file.getName().startsWith("instance")){
+                continue; // only read instance
             }
+
             List<Point> inputPoints = new ArrayList<Point>();
             try {
                 Scanner scanner = new Scanner(file);
@@ -42,15 +44,16 @@ public class FileIO {
             }catch (FileNotFoundException e){
                 System.out.println("file not find");
             }
+            String fileNumber = file.getName().substring(8,10);
             fileMap.put(fileNumber,inputPoints);
-            fileNumber++;
+
         }
 
         return fileMap;
     }
 
-    public static void write (String fileName, int fileNumber, List<String> lines){
-        Path path = Paths.get("./output_local/" +fileName+fileNumber+".txt");
+    public static void write (String fileName, String fileNumber, List<String> lines){
+        Path path = Paths.get("./output_local/" +fileName+fileNumber);
         try {
             Files.createFile(path);
             Files.write(path, lines, Charset.forName("UTF-8"));
